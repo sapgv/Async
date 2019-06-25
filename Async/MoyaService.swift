@@ -11,7 +11,7 @@ import Moya
 enum MyService {
     
     case employees
-    
+    case employee(_ id: String)
 }
 
 extension MyService: TargetType {
@@ -21,6 +21,8 @@ extension MyService: TargetType {
         switch self {
         case .employees:
             return "/employees"
+        case .employee(let id):
+            return "/employee/\(id)"
         }
     }
     var method: Moya.Method {
@@ -28,7 +30,7 @@ extension MyService: TargetType {
     }
     var task: Task {
         switch self {
-        case .employees:
+        case .employees, .employee:
             return .requestPlain
         }
     }

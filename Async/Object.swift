@@ -14,7 +14,7 @@ struct Employee: Codable {
     let employee_name: String
     
     enum EmployeeKeys: String, CodingKey {
-        case id = "i"
+        case id = "id"
         case employee_name
     }
     

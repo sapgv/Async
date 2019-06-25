@@ -19,10 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEW-AD-iZ5">
-                                <rect key="frame" x="184" y="438" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="169.5" y="438" width="75" height="30"/>
+                                <state key="normal" title="Employees"/>
                                 <connections>
                                     <action selector="actionPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0D0-FU-UVg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thd-v8-Nk3">
+                                <rect key="frame" x="187" y="476" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="group"/>
+                                <connections>
+                                    <action selector="actionGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VH8-Qy-0QA"/>
                                 </connections>
                             </button>
                         </subviews>
